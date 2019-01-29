@@ -188,3 +188,6 @@ client.urgent           #2f343a #900000 #ffffff #900000
 
 # kde connect
 exec_always --no-startup-id kdeconnect-indicator
+
+# set wallpaper
+exec --no-startup-id nitrogen --restore
