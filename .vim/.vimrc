@@ -4,6 +4,7 @@ colorscheme molokai
 
 set tabstop=4       " number of visual spaces per TAB
 set softtabstop=4   " number of spaces in tab when editing
+set shiftwidth=4
 "set expandtab       " tabs are spaces
 
 set number " show line numbers
@@ -34,6 +35,14 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+" Bind to toggle NERDTree
+map <C-e> :NERDTreeToggle<CR>
+
+" Fuzzy finder bind
+map <C-p> :FZF<CR>
+
+" Compile & Run c++
+nmap <silent> <F9> :SCCompileRunAsync<cr>:SCViewResultAsync<CR>
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
@@ -41,6 +50,12 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf'
+Plug 'valloric/youcompleteme'
+Plug 'jiangmiao/auto-pairs'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'xuhdev/SingleCompile'
 
 " Initialize plugin system
 call plug#end()
