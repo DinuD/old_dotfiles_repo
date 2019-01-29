@@ -39,8 +39,8 @@
 [shortcuts]
     close = ctrl+e
     close_all = ctrl+shift+e
-    history = ctrl+h
-    context = ctrl+shift+h
+    history = ctrl+shift+h
+    #context = ctrl+shift+h
 
 [urgency_normal]
     background = "#111111"
