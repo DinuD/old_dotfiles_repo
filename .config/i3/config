@@ -191,3 +191,6 @@ exec_always --no-startup-id kdeconnect-indicator
 
 # set wallpaper
 exec --no-startup-id nitrogen --restore
+
+# bind to launch chrome
+bindsym $mod+c exec google-chrome-stable
